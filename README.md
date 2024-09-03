@@ -1,21 +1,20 @@
 # Targeted Enrollment Analytics
 
 ## Project Overview
-**Targeted Enrollment Analytics** is a data-driven project aimed at enhancing enrollment at UVW College by analyzing U.S. Census Bureau data. The primary objective is to identify key demographic and socioeconomic factors that influence income levels, focusing on individuals earning $50,000 or less. By leveraging these insights, the project aims to create targeted marketing profiles that effectively attract potential students.
+**Targeted Enrollment Analytics** is a data-driven project aimed at enhancing enrollment at universities by analyzing U.S. Census Bureau data. The primary objective is to identify key demographic and socioeconomic factors that influence income levels, focusing on individuals earning $50,000 or less. By leveraging these insights, the project aims to create targeted marketing profiles that effectively attract potential students.
 
 ## Objectives
 - **Analyze**: Examine U.S. Census data to understand demographic and socioeconomic factors affecting income levels.
 - **Visualize**: Use data visualizations to reveal patterns and correlations.
-- **Target**: Develop actionable marketing strategies based on the insights to increase enrollment at UVW College.
 
 ## Assumptions
 - The dataset is clean, accurate, and free from significant missing values or erroneous data.
 - The data structures used for analysis are appropriate for the operations performed.
-- Individuals with an income of $50,000 or less are a key demographic for UVW College.
+- Individuals with an income of $50,000 or less are a key demographic.
 - Socioeconomic factors such as education, age, and occupation significantly influence income levels.
 
 ## Data Source
-The project uses the census dataset from the 1994 U.S. Census database cleaned by [Barry Becker and Ronny Kohavi](https://www.census.gov/data/datasets.html). This dataset includes attributes such as age, workclass, education, occupation, and income, which are crucial for the analysis.
+The project uses the census dataset from the 1994 U.S. Census database cleaned by [Barry Becker & Ronny Kohavi](https://www.census.gov/data/datasets.html). This dataset includes attributes such as age, workclass, education, occupation, and income, which are crucial for the analysis.
 
 ## Data Preparation
 1. **Data Cleaning**: Handled missing values and standardized column names.
