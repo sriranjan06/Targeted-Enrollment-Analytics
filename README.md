@@ -1,62 +1,77 @@
-# Univariate-and-Multivariate-Data-Analysis-and-Visualization
+# Targeted Enrollment Analytics
 
-## Project: Enhancing Enrollment at UVW College
+## Project Overview
+**Targeted Enrollment Analytics** is a data-driven project aimed at enhancing enrollment at UVW College by analyzing U.S. Census Bureau data. The primary objective is to identify key demographic and socioeconomic factors that influence income levels, focusing on individuals earning $50,000 or less. By leveraging these insights, the project aims to create targeted marketing profiles that effectively attract potential students.
 
-## I. Objectives
-The primary goal of this project is to boost enrollment at UVW College by analyzing U.S. Census Bureau data to identify key demographic and socioeconomic factors affecting income levels. By gaining insights into these factors, we aim to create targeted marketing profiles that will help attract more students from demographic groups with an income of $50,000 or less.
+## Objectives
+- **Analyze**: Examine U.S. Census data to understand demographic and socioeconomic factors affecting income levels.
+- **Visualize**: Use data visualizations to reveal patterns and correlations.
+- **Target**: Develop actionable marketing strategies based on the insights to increase enrollment at UVW College.
 
-## II. Assumptions
+## Assumptions
+- The dataset is clean, accurate, and free from significant missing values or erroneous data.
+- The data structures used for analysis are appropriate for the operations performed.
+- Individuals with an income of $50,000 or less are a key demographic for UVW College.
+- Socioeconomic factors such as education, age, and occupation significantly influence income levels.
 
-- The dataset is clean and accurate, without significant missing values or erroneous data.
-- The data structures used for analysis are suitable for the required operations.
-- Individuals with an income of $50,000 or less represent a key demographic for UVW College.
-- Certain socioeconomic factors such as education, age, and occupation strongly influence income levels.
+## Data Source
+The project uses the census dataset from the 1994 U.S. Census database cleaned by [Barry Becker and Ronny Kohavi](https://www.census.gov/data/datasets.html). This dataset includes attributes such as age, workclass, education, occupation, and income, which are crucial for the analysis.
 
-## III. User Stories
+## Data Preparation
+1. **Data Cleaning**: Handled missing values and standardized column names.
+2. **Feature Engineering**: Created a `salary-bin` column to categorize income levels.
+3. **Exploratory Data Analysis (EDA)**: Conducted to understand the distribution and relationships between variables.
 
-### A. User Story 1: Education Level and Income
-1. **Requirement:** Understand the distribution of education levels by income.
-2. **Visualization:** A count plot showing the distribution of education levels, divided by income range.
-3. **Attributes Used:** Education, Salary Range.
-4. **Conclusion:** This visualization shows a clear distinction in education levels between income groups. Higher education is more prevalent among individuals with income above $50,000. This information is useful for targeting marketing efforts towards specific educational backgrounds.
+## User Stories & Visualizations
+### User Story 1: Education Level and Income
+- **Requirement**: Understand the distribution of education levels by income.
+- **Visualization**: A count plot showing the distribution of education levels by income range.
+- **Conclusion**: Higher education is more prevalent among individuals earning above $50,000.
 
-### B. User Story 2: Age and Hours per Week by Income
-1. **Requirement:** Determine if there’s a relationship between age, hours worked per week, and income.
-2. **Visualization:** A scatter plot showing the distribution of age and hours worked per week, colored by income range.
-3. **Attributes Used:** Age, Hours per Week, Salary Range.
-4. **Conclusion:** This visualization indicates that higher incomes generally correspond to older individuals who work more hours. Understanding this relationship helps UVW College design marketing strategies that appeal to specific age groups.
+### User Story 2: Age and Hours per Week by Income
+- **Requirement**: Determine the relationship between age, hours worked per week, and income.
+- **Visualization**: A scatter plot of age versus hours worked per week, colored by income range.
+- **Conclusion**: Higher incomes generally correspond to older individuals who work more hours.
 
-### C. User Story 3: Correlation Matrix of Key Variables
-1. **Requirement:** Examine the correlation between age, education, capital gain, hours per week, and income.
-2. **Visualization:** A heatmap of the correlation matrix for these key variables.
-3. **Attributes Used:** Age, Education Number, Capital Gain, Hours per Week, Salary-bin.
-4. **Conclusion:** This correlation matrix reveals that education and age have a positive correlation with higher incomes. This insight guides UVW College in crafting messages that emphasize the value of education and work experience.
+### User Story 3: Correlation Matrix of Key Variables
+- **Requirement**: Examine the correlation between age, education, capital gain, hours per week, and income.
+- **Visualization**: A heatmap showing the correlation matrix of these key variables.
+- **Conclusion**: Education and age positively correlate with higher incomes.
 
-### D. User Story 4: Capital Gain by Income
-1. **Requirement:** Analyze the distribution of capital gain across income groups.
-2. **Visualization:** A box plot depicting capital gain for each income range.
-3. **Attributes Used:** Capital Gain, Salary Range.
-4. **Conclusion:** The box plot demonstrates a significant variance in capital gains among higher-income groups, indicating that they tend to have higher investment returns. UVW College can leverage this information to target individuals interested in courses focused on finance or investment.
+### User Story 4: Capital Gain by Income
+- **Requirement**: Analyze the distribution of capital gain across income groups.
+- **Visualization**: A box plot of capital gain by income range.
+- **Conclusion**: Significant variance in capital gains among higher-income groups indicates higher investment returns.
 
-### E. User Story 5: Native Country, Education, and Income
-1. **Requirement:** Understand the relationship between native country, education, and income.
-2. **Visualization:** A scatter plot depicting education and age, with hue by native country and columns for income range.
-3. **Attributes Used:** Education Number, Age, Native Country, Salary Range.
-4. **Conclusion:** This plot shows that certain native countries are more associated with specific income levels, indicating cultural or educational influences. This data can help UVW College tailor their marketing strategies to different demographic groups based on native country and education levels.
+### User Story 5: Native Country, Education, and Income
+- **Requirement**: Understand the relationship between native country, education, and income.
+- **Visualization**: A scatter plot of education and age, with hue by native country and columns for income range.
+- **Conclusion**: Certain native countries are associated with specific income levels, indicating cultural or educational influences.
 
-## IV. Visualizations Design Process
-1. **Data Cleaning and Preparation:**
-   - Handled missing values and renamed columns for clarity.
-   - Created a salary-bin column to indicate income levels.
-2. **Selection of Visualization Types:**
-   - Chose appropriate plots for univariate and multivariate analysis.
-   - Used count plots, scatter plots, heatmaps and box plots to capture a variety of data relationships.
-3. **Visualization Design Principles:**
-   - Ensured readability by choosing appropriate color schemes and typefaces.
-   - Maintained clarity by using suitable axis labels, legends, and plot titles.
-   - Prioritized information to clearly communicate insights to the marketing team.
+## Technology Stack
+- **Python**: Core programming language used for data manipulation and visualization.
+- **Pandas**: Data analysis and manipulation.
+- **Matplotlib & Seaborn**: Libraries used for creating visualizations.
+- **Statsmodels**: Used for creating mosaic plots.
 
-## V. Conclusion
-My analysis has successfully highlighted several critical socioeconomic factors, such as education, age, marital status, and native country, that influence income levels. By examining these factors through various data visualizations, we have derived actionable insights that can guide targeted marketing efforts. This project enhances our understanding of the demographic profiles most likely to benefit from educational opportunities at UVW College.
+## How to Run the Project
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/sriranjan06/Targeted-Enrollment-Analytics.git
+   ```
+2. **Install Dependencies**:
+   Ensure you have Python installed, then install the required packages:
+   ```bash
+   pip install pandas matplotlib seaborn statsmodels
+   ```
+3. **Run the Analysis**:
+   Execute the Python script to generate the visualizations:
+   ```bash
+   python abc.ipynb
+   ```
 
+## Results & Insights
+The analysis successfully identifies key socioeconomic factors influencing income levels. Insights gained may aid in crafting targeted marketing campaigns that appeal to specific demographic groups, ultimately enhancing enrollment.
 
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
