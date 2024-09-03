@@ -66,7 +66,7 @@ The project uses the census dataset from the 1994 U.S. Census database cleaned b
 3. **Run the Analysis**:
    Execute the Python script to generate the visualizations:
    ```bash
-   python abc.ipynb
+   python Targeted_Enrollment_Analysis.ipynb
    ```
 
 ## Results & Insights
